@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs": false,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "es2015",
+      "es2015.iterable",
+      "dom"
+    ]
+  },
+  "compileOnSave": true,
+  "typeRoots": [
+    "../node_modules/@types/"
+  ],
+  "types": [
+    "system"
+  ],
+  "include": [
+    "app/**/*",
+    "polyfills.ts",
+    "vendor.ts"
+  ],
+  "exclude": [
+    "node_modules/*",
+    "**/*-aot.ts",
+    "wwwroot",
+    "wwwroot/node_modules"
+  ]
+}
