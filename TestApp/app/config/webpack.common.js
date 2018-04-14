@@ -53,6 +53,11 @@ module.exports = {
             helpers.root("./app"), // location of your src
             {} // a map of your routes
         ),
+        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
        
         new webpack.optimize.CommonsChunkPlugin({
             name: ["app", "vendor", "polyfills"]
